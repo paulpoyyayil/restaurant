@@ -1,0 +1,65 @@
+name: restaurant
+description: A new Flutter project.
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.5 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  flutter_screenutil: ^5.8.4
+  remixicon: ^1.0.0
+  http: ^1.1.0
+  recase: ^4.1.0
+  shared_preferences: ^2.1.2
+  flutter_native_splash: ^2.3.1
+  flutter_launcher_icons: ^0.13.1
+  loading_animation_widget: ^1.2.0+4
+  email_validator: ^2.1.17
+  cached_network_image: ^3.2.3
+  maps_launcher: ^2.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter_native_splash:
+  ios: true
+  android: true
+  color: "#151d3b"
+  image: assets/splash.png
+  android_12:
+    image: assets/splash.png
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  remove_alpha_ios: true
+  image_path_android: "assets/logo.png"
+  image_path_ios: "assets/logo.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat-Regular.ttf
+        - asset: assets/fonts/Montserrat-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Montserrat-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Montserrat-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Montserrat-Medium.ttf
+          weight: 500
